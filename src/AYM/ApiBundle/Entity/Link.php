@@ -10,7 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table()
  * @ORM\Entity(repositoryClass="AYM\ApiBundle\Entity\LinkRepository")
  */
-class Link
+class Link extends BaseEntity
 {
     /**
      * @var string
