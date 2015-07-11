@@ -1,0 +1,4 @@
+aym_api:
+    resource: AYM\ApiBundle\Controller\LinkController
+    type:     rest
+

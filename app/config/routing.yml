@@ -1,5 +1,3 @@
 aym_api:
-    resource: "@AYMApiBundle/Controller/"
-    type:     annotation
+    resource: "@AYMApiBundle/Resources/config/routing.yml"
     prefix:   /
-
