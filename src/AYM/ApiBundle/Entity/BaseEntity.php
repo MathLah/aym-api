@@ -8,6 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * BaseEntity
  *
  * @ORM\MappedSuperclass
+ * @ORM\HasLifecycleCallbacks()
  */
 class BaseEntity
 {
@@ -30,7 +31,7 @@ class BaseEntity
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="updated", type="datetime")
+     * @ORM\Column(name="updated", type="datetime", nullable=true)
      */
     private $updated;
 
@@ -89,5 +90,25 @@ class BaseEntity
     public function getUpdated()
     {
         return $this->updated;
+    }
+    
+    //*******************************************************
+    // LIFECYCLE CALLBACKS
+    //*******************************************************
+
+    /**
+     * @ORM\PrePersist
+     */
+    public function prePersistExercise()
+    {
+        $this->created = new \DateTime();
+    }
+
+    /**
+     * @ORM\PreUpdate
+     */
+    public function preUpdateExercise()
+    {
+        $this->updated = new \DateTime();
     }
 }

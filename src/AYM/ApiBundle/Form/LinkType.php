@@ -6,7 +6,7 @@ use Symfony\Component\Form\FormBuilderInterface;
 
 class LinkType extends BaseEntityType
 {
-    protected $dataClass = "AYM\ApiBundle\Entity\LinkType";
+    protected $dataClass = "AYM\ApiBundle\Entity\Link";
     
     /**
      * @param FormBuilderInterface $builder
