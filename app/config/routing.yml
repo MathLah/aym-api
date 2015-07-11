@@ -1,0 +1,5 @@
+aym_api:
+    resource: "@AYMApiBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
