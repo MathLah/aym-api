@@ -20,4 +20,20 @@ class BaseController extends FOSRestController implements ClassResourceInterface
         
         return $this->handleView($view);
     }
+    
+    public function getAction($id)
+    {
+        $data = $this
+            ->getDoctrine()
+            ->getRepository($this->entityName)
+            ->find($id);
+            
+        if (! $data) {
+            throw $this->createNotFoundException('Unable to find link.');
+        }
+            
+        $view = $this->view($data);
+        
+        return $this->handleView($view);
+    }
 }
