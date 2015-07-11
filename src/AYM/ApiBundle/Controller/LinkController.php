@@ -2,10 +2,7 @@
 
 namespace AYM\ApiBundle\Controller;
 
-use FOS\RestBundle\Controller\FOSRestController;
-use FOS\RestBundle\Routing\ClassResourceInterface;
-
-class LinkController extends FOSRestController implements ClassResourceInterface
+class LinkController extends BaseController
 {
     public function cgetAction()
     {
