@@ -7,7 +7,7 @@ use FOS\RestBundle\Routing\ClassResourceInterface;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
 
-class BaseController extends FOSRestController implements ClassResourceInterface
+abstract class BaseController extends FOSRestController implements ClassResourceInterface
 {
     protected $entityName;
     protected $entityClass;

@@ -1,4 +1,11 @@
-aym_api:
+aym_api_link:
     resource: AYM\ApiBundle\Controller\LinkController
     type:     rest
 
+aym_api_category:
+    resource: AYM\ApiBundle\Controller\CategoryController
+    type:     rest
+
+aym_api_tag:
+    resource: AYM\ApiBundle\Controller\TagController
+    type:     rest

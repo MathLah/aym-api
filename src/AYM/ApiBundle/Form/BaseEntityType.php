@@ -6,7 +6,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
-class BaseEntityType extends AbstractType
+abstract class BaseEntityType extends AbstractType
 {
     protected $dataClass;
     

@@ -9,7 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
  *
  * @ORM\MappedSuperclass
  */
-class AbstractTaxonomyTerm extends BaseEntity
+abstract class AbstractTaxonomyTerm extends BaseEntity
 {
 
     /**
