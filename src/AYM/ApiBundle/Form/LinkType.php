@@ -18,6 +18,8 @@ class LinkType extends BaseEntityType
         
         $builder
             ->add('url')
+            ->add('category')
+            ->add('tags')
         ;
     }
 }
